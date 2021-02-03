@@ -1,46 +1,45 @@
 import React from "react"
+import s from "./../../style.module.css"
 
 const AddressMetaData = (props) => {
-    return(
-        <div>
-            <div>
-                <div>
-                    <div>
-                        IP ADDRESS
-                    </div>
-                    <div>
-                        {props.address}
-                    </div>
+    return (
+        <div className={s.display_data_container}>
+            <div className={s.display_data_container_element}>
+                <div className={s.display_data_container_element_header}>
+                    IP ADDRESS
                 </div>
-
-                <div>
-                    <div>
-                        location
-                    </div>
-                    <div>
-                        {props.city}
-                    </div>
+                <div className={s.display_data_container_element_bottom}>
+                    {props.address}
                 </div>
-
-                <div>
-                    <div>
-                        TIMEZONE
-                    </div>
-                    <div>
-                        {props.timezone}
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        Internet provider
-                    </div>
-                    <div>
-                        {props.provider}
-                    </div>
-                </div>
-
             </div>
+            <div className={s.display_data_container_element}>
+                <div className={s.display_data_container_element_header}>
+                    LOCATION
+                </div>
+                <div className={s.display_data_container_element_bottom}>
+                    {props.country}, {props.city}
+                </div>
+            </div>
+
+            <div className={s.display_data_container_element}>
+                <div className={s.display_data_container_element_header}>
+                    TIMEZONE
+                </div>
+                <div className={s.display_data_container_element_bottom}>
+                    {props.timezone}
+                </div>
+            </div>
+
+            <div className={s.display_data_container_element}>
+                <div className={s.display_data_container_element_header}>
+                    ISP
+                </div>
+                <div className={s.display_data_container_element_bottom}>
+                    {props.isp}
+                </div>
+            </div>
+
+
         </div>
     )
 }
