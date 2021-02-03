@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    min-height: 350px;
+
+    background-image: url("./IMG/pattern-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header_search_form {
+    width: 30%;
+    min-height: 50px;
+    text-align: center;
+    font-size: 25px;
+
+    padding-top: 50px;
+
+    color: white;
+    font-weight: bold;
+
+    margin: auto;
+}
