@@ -1,0 +1,9 @@
+
+  /*Leaflet_MAP*/
+  .leaflet-container {
+    width: 100%;
+    height: 70%;
+
+    position: absolute;
+    z-index: 1;
+  }

@@ -3,6 +3,7 @@ import NewForm from "../Forms/NewForm";
 import s from "./../../style.module.css"
 import AddressMetaData from "./AddressMetaData";
 import Map from "../Map/Map";
+import "./../../App.css"
 
 const Address = (props) => {
 
