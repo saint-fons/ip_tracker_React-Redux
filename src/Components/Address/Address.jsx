@@ -9,7 +9,7 @@ const Address = (props) => {
 
     return <div className={s.address_container}>
         <div className={s.header}>
-            <div className={s.header_search_form}>Required IP address: {props.address}</div>
+            <div className={s.header_search_form}>Current IP address: {props.address}</div>
             <NewForm getAddress={props.getAddress}
                      updateAddress={props.updateAddress}
                      remoteIP={props.remoteIP}

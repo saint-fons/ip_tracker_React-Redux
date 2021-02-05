@@ -2,8 +2,6 @@ import {addressAPI} from "../API/API";
 
 
 const SET_ADDRESS = 'SET-ADDRESS';
-const ADD_ADDRESS = 'ADD-ADDRESS';
-
 const UPDATE_NEW_ADDRESS = 'UPDATE-NEW-ADDRESS'
 
 
@@ -63,9 +61,6 @@ export const setAddress = (ip, location, as, isp, proxy) =>
 export const updateAddressAC = (text) =>
     ({type: UPDATE_NEW_ADDRESS, newAddress: text})
 
-export const addAddressAC = () =>
-    ({type: ADD_ADDRESS})
-
 export const getAddress = (remoteIP) => { /*ThunkCreator*/
     return (dispatch) => {
         addressAPI.getAddress(remoteIP)
@@ -79,12 +74,6 @@ export const getAddress = (remoteIP) => { /*ThunkCreator*/
 export const updateAddress = (text) => {
     return (dispatch) => {
         dispatch(updateAddressAC(text))
-    }
-}
-
-export const addAddress = () => {
-    return (dispatch) => {
-        dispatch(addAddressAC())
     }
 }
 
