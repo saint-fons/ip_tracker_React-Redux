@@ -1,7 +1,7 @@
 # IP ADDRESS TRACKER(ipify API)
 
 Приложение предоставления данных по ip адресу.
-Онлайн версия приложения: [Live version](https://intro-component-with-signup-form-jade.vercel.app/)
+Онлайн версия приложения: [Live version](https://ip-tracker-ver2-git-master.saint-fons.vercel.app/)
 В некоторых случаях запрос к geo.ipify.org может быть заблокирован блокировщиком рекламы. Необходимо добавить в исключения или открыть в инкогнито.
 
 ## Приложение имеет функционал;
